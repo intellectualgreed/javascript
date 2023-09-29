@@ -6,6 +6,3 @@ let numeros = [
 ]
 
 document.write(`posições do array: ${JSON.stringify(numeros)}`);
-
-// Digite a resolução do exercício aqui e visualize o resultado no navegador
-
