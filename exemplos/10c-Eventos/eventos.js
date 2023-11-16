@@ -10,7 +10,13 @@ const sub01 = pagina.querySelector("#subtitulo-exemplo01");
 
 
 
-// 1ª Digitação (Aqui)
+sub01.addEventListener('mouseover', function(){
+    msg.textContent = 'Você passou o mouse sobre...';
+});
+
+sub01.addEventListener('mouseout', function(){
+    msg.textContent = '';
+});
 
 
 
