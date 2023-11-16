@@ -23,9 +23,17 @@ sub01.addEventListener('mouseout', function(){
 // ____________________________________________________________________________
 // Resolução exemplo 2 (Modo noturno)
 
+const botao = pagina.querySelector("#noturno");
+botao.addEventListener('click', function(){
+    pagina.classList.toggle('modo-noturno');
+    if (botao.textContent == 'Ativar'){
+        botao.textContent = 'Desativar'; 
+    } else {
+        botao.textContent = 'Ativar'
+    }
+});
 
 
-// 2ª Digitação (Aqui)
 
 
 
@@ -70,7 +78,16 @@ formulario.addEventListener('submit', function(event) {
 
 
 
-// 3ª Digitação (Aqui)
+function calculaMedia(nota1, nota2){
+    return (nota1 + nota2) / 2;
+}
+function verificaSituacao(media){
+    if (media >=7){
+        return 'Aprovado';
+    } else {
+        return 'Reprovado';
+    }
+}
 
 
 
